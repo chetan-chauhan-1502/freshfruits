@@ -3,27 +3,25 @@ import "./Foods.css";
 import banner2 from "../../assets/assets/images/banner-02.jpg";
 import FoodData from "./FoodData";
 import { useDispatch, useSelector } from "react-redux";
-import {add} from '../Store/CartSlice'
+import { add } from "../Store/CartSlice";
 import { FaRupeeSign } from "react-icons/fa";
-
 
 const Foods = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter food items based on search term
   const filteredFoods = FoodData.filter((food) =>
-    food.title.toLowerCase().includes(searchTerm.toLowerCase())
+    food.title.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
-  let names = useSelector((state) => state.cart);
-  let dispatch=useDispatch();
+  const names = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
 
-  let ADD=(item)=>{
-    let items = names.find((cartItem) => cartItem.id === item.id);
+  const ADD = (item) => {
+    const items = names.find((cartItem) => cartItem.id === item.id);
     if (!items) {
       dispatch(add(item));
     }
-  }
+  };
 
   return (
     <>
@@ -47,10 +45,10 @@ const Foods = () => {
                 <img src={item.image01} className="card-img-top" alt="..." />
                 <p className="card-title">{item.title}</p>
                 <div className="Last">
-                <span>
-                  <FaRupeeSign />
-                  {item.price}
-                </span>
+                  <span>
+                    <FaRupeeSign />
+                    {item.price}
+                  </span>
                   <button className="btn" onClick={() => ADD(item)}>
                     ADD to Cart
                   </button>
@@ -61,30 +59,30 @@ const Foods = () => {
         </div>
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center">
-            <li className="page-item ">
-              <a className="page-link" href="#" tabIndex="-1">
+            <li className="page-item">
+              <button className="page-link" type="button" tabIndex="-1">
                 Prev
-              </a>
+              </button>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
+              <button className="page-link" type="button">
                 1
-              </a>
+              </button>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
+              <button className="page-link" type="button">
                 2
-              </a>
+              </button>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
+              <button className="page-link" type="button">
                 3
-              </a>
+              </button>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
+              <button className="page-link" type="button">
                 Next
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

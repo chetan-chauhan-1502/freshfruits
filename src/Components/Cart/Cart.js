@@ -8,18 +8,22 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { remove } from "../Store/CartSlice";
 
 const Cart = () => {
-  let names = useSelector((state) => state.cart);
-  let dispatch = useDispatch();
+  const names = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
 
-  let REMOVE = (itemId) => {
+  const REMOVE = (itemId) => {
     dispatch(remove(itemId));
   };
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(names));
-  }, []);
+  }, [names]);
 
-  let price = names.reduce((def, item) => def + item.price * item.quantity, 0);
+  const price = names.reduce(
+    (def, item) => def + item.price * item.quantity,
+    0,
+  );
+
   return (
     <>
       <div className="banner">
@@ -27,7 +31,7 @@ const Cart = () => {
         <h1 className="overlyy">Your Cart</h1>
       </div>
 
-      <table class="table">
+      <table className="table">
         {names.length === 0 ? (
           <h1 className="text-danger text-center">No Item Cart</h1>
         ) : (
@@ -44,20 +48,19 @@ const Cart = () => {
         </thead>
 
         {names.map((item) => {
-          let price = item.price * item.quantity;
+          const itemPrice = item.price * item.quantity;
           return (
-            <>
+            <React.Fragment key={item.id}>
               <tbody>
                 <tr>
                   <td>
                     <img src={item.image01} alt="product1" />
                   </td>
-                  <td style={{ fontSize: 25 }}> {item.title}</td>
+                  <td style={{ fontSize: 25 }}>{item.title}</td>
                   <td style={{ fontSize: 25 }}>
                     <span>
                       <FaRupeeSign />
-                      {/* here change  */}
-                      {price}
+                      {itemPrice}
                     </span>
                   </td>
                   <td style={{ fontSize: 25 }}>
@@ -68,7 +71,7 @@ const Cart = () => {
                   </td>
                 </tr>
               </tbody>
-            </>
+            </React.Fragment>
           );
         })}
       </table>
