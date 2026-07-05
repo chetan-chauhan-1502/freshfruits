@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.third {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 0 150px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+.ttop {
+  color: black;
+  font-size: 40px;
+  color: red;
+}
+.tmidle {
+  width: 50%;
+  margin: auto;
+  font-size: 60px;
+}

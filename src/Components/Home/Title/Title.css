@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

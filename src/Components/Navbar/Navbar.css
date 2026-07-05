@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+.logomain {
+  width: auto;
+  height: 100px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+.logomain img {
+  width: 60px;
+  height: auto;
+  margin: auto;
+}
+
+.mainlogoname {
+  width: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  /* background-color: aqua; */
+}
+.nav {
+  width: 350px;
+  height: 100px;
+  /* background-color: red; */
+}
+.nav ul {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.nav ul li a:hover {
+  color: red;
+}
+.nav ul li a:focus {
+  color: red;
+}
+.icons {
+  /* border: 2px solid black; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart {
+  font-size: 28px;
+  color: black;
+}
+.user {
+  font-size: 28px;
+  color: black;
+}
+
+/* ---------------------------------------------- */
+
+/* Cart canvas mate  */
+
+.subtotal {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: orangered;
+}
+.subtotal span {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.subtotal button {
+  background-color: white;
+  color: red;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.offcanvas-body {
+  overflow-y: scroll;
+}
+
+/* ---------------------------------- */
+
+/* CART ICON FOR  */
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #333333;
+  /* background: #dddddd;  */
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon:active {
+  background: #cccccc;
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* -------------------------------------- */
+
+/* CartItems For  */
+
+.carddata_main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cardd {
+  /* background-color: aqua; */
+  margin: 40px 0;
+}
+.oneee {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.oneee img {
+  width: 50px;
+  height: 50px;
+}
+.oneee p {
+  font-size: 25px;
+}
+.twooo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.twooo p {
+  font-size: 25px;
+  color: red;
+}
+.btnn {
+  /* background-color: red; */
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+.Lasttt {
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
+  font-size: 30px;
+}
+.Lasttt span {
+  /* background-color: tomato; */
+}
+.priceee {
+  padding: 2px 15px 2.9px 15px;
+  background-color: tomato;
+}
+.Lasttt span button {
+  background-color: tomato;
+  padding: 0px 15px;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 90%;
+  height: auto;
+  /* background-color: red; */
+  margin: auto;
+  /* padding: 100px; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  /* background-color: red; */
+}
+
+.card {
+  width: 16.8em;
+  height: auto;
+  /* padding: 0 20px; */
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  padding: 30px 40px 20px 40px;
+  /* background-color: aqua; */
+}
+.card img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  transition: all ease-in 0.5s linear infinite;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card-title {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  /* background-color: red; */
+}
+.Last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+.Last span {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+}
+.Last .btn {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+}
+
+/* ----------------------------------------------- */
+
+.fifth {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+.fifth ul {
+  /* background-color: azure; */
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.fifth li {
+  list-style: none;
+}
+.fifth li button {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: none;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.fifth li span img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+.fifth li button:focus {
+  background-color: white;
+  transition: all 0.5s ease;
+  color: red;
+}

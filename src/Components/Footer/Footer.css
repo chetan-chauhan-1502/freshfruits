@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  block-size: auto;
+}
+.footer_main {
+  width: 100%;
+  height: auto;
+  padding: 0 100px 20px 100px;
+  margin-top: 50px;
+  background-color: rgb(246, 185, 173);
+}
+.footer_beta {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0px 30px;
+  /* background-color: aqua; */
+}
+.footer_b {
+  width: auto;
+}
+.logo {
+  width: 25%;
+  height: auto;
+  /* background-color: green; */
+}
+.logo img {
+  width: 70px;
+  height: auto;
+}
+.logoname {
+  font-size: 20px;
+}
+.footer_b h1 {
+  font-size: 30px;
+}
+.footer_b h3 {
+  font-size: 20px;
+}
+.footer_b input {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.searchfor {
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_btn {
+  padding: 5px 20px;
+  width: 4rem;
+  height: auto;
+  color: white;
+  background-color: red;
+}
+.social_media {
+  text-align: end;
+  /* background-color: red; */
+}
+.follow {
+  font-size: 20px;
+}
+.sociallink {
+  background-color: red;
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+  margin: 0 10px 0 10px;
+  border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sixth {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  /* margin-bottom: 30px; */
+  /* background-color: aqua; */
+}
+.sixl {
+  width: 50%;
+  height: auto;
+  /* background-color: darkcyan; */
+}
+.sixl img {
+  width: 100%;
+  height: auto;
+}
+
+.sixr {
+  width: 50%;
+  height: auto;
+  padding: 100px 0;
+
+  /* background-color: palegreen; */
+}
+.sixr p {
+  font-size: 15px;
+}
+.sixr h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.done {
+  color: red;
+  margin-right: 8px;
+}

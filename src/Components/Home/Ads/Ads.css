@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.adsmain {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  /* background-color: red; */
+  /* border: 4px solid black; */
+}
+.left {
+  width: 50%;
+  height: auto;
+  padding: 130px 30px 50px 0;
+  background-color: white;
+}
+.left h4 {
+  color: black;
+}
+.left h1 {
+  font-size: 60px;
+}
+.btns {
+  width: 100%;
+  height: 50px;
+  /* background-color: green; */
+}
+.bl {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  margin-right: 30px;
+  font-weight: 700;
+}
+.br {
+  padding: 10px 20px;
+  background-color: white;
+  color: red;
+  border-radius: 10px;
+  margin-right: 30px;
+  font-weight: 700;
+}
+.llast {
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* background-color: darkblue; */
+  margin-top: 30px;
+}
+.pl {
+  width: 30%;
+}
+.pr {
+  width: 30%;
+}
+.noshiping {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.security {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.noshiping {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.pr {
+  width: 50%;
+}
+.right {
+  width: 50%;
+  height: auto;
+  /* padding: 0 100px; */
+  /* background-color: rgb(100, 47, 47); */
+}
+.right img {
+  width: 100%;
+  height: auto;
+  /* height: 100%; */
+  background-color: white;
+}

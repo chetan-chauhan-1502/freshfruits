@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lastmain {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  /* background-color: red; */
+}
+.lastl {
+  padding: 50px 0 0 0;
+  width: 150%;
+  height: auto;
+  background-color: rgb(236, 225, 225);
+  /* background-color: blue; */
+}
+
+.carousel-item h5 {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 20px;
+}
+.carousel-item h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.carousel-item p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.lastlast {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+}
+.lastlast {
+  width: 100%;
+  height: auto;
+}
+.lastlast span {
+  padding: 20px 20px;
+  /* background-color: red; */
+}
+.lastlast span img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.lastr img {
+  width: 100%;
+  height: auto;
+  /* background-color: black; */
+}
